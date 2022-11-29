@@ -13,9 +13,9 @@ First of all you will need to isntall Node which will give you the power to use 
 
 After that you will be able to install packages from https://www.npmjs.com/ from where we will install everything we need.
 
-1. Open Terminal if you are on Mac or a Console if you are on Windows and run the following command ---> npm install -g typescript ts-node parcel-bundler
+1. Open Terminal if you are on Mac or a Console if you are on Windows and run the following command -> npm install -g typescript ts-node parcel-bundler
 2. Open the project via Visual Studio Code and then from the top bar of options of Visual Studio Code tap on the Terminal option and then New Terminal
-3. In the opened ternimal which should be somewhere at the bottom of Visual Studio Code type the following --->
+3. In the opened ternimal which should be somewhere at the bottom of Visual Studio Code type the following ->
 npm install faker-js @types/google.maps
 
 After you are done with all of this you can run the project by typing in the same Visual Studio Code Terminal parcel index.html and this command should run a local server which Typescript will use to run. After that open a browser and in type http://localhost:1234 . This should run the google map in the browser with the two markers we created in the live demo. Your job is to add a popup description window on click of the marker which will explain what the marker is showing. Have fun :) 
