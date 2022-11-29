@@ -20,4 +20,4 @@ npm install faker-js @types/google.maps
 
 After you are done with all of this you can run the project by typing in the same Visual Studio Code Terminal parcel index.html and this command should run a local server which Typescript will use to run. After that open a browser and in type http://localhost:1234 . This should run the google map in the browser with the two markers we created in the live demo. Your job is to add a popup description window on click of the marker which will explain what the marker is showing. Have fun :) 
 
-#If any question slack me or email me at plamen.petkov@mobilewaves.com
+# If any question slack me or email me at plamen.petkov@mobilewaves.com
