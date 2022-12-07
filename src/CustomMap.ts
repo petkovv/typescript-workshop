@@ -1,4 +1,5 @@
 interface Entity {
+    name: string;
     location: {
         lat: number;
         lng: number;
@@ -19,10 +20,21 @@ export class CustomMap {
     }
 
     addMarker(entity: Entity): void {
-        new google.maps.Marker({
+        const infowindow = new google.maps.InfoWindow({
+            content: `I am here and my name is ${entity.name}`,
+            ariaLabel: "My information",
+          });
+
+        const marker =  new google.maps.Marker({
             map: this.map,
             position: entity.location,
         })
+        marker.addListener("click", () => {
+            infowindow.open({
+              anchor: marker,
+              map: this.map,
+            });
+          });
     }
 
     // addCompanyMarker(company: Company): void {

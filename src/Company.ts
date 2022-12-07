@@ -1,13 +1,13 @@
 export class Company {
-    companyName: string;
+    name: string;
     location: {
         lat: number;
         lng: number;
     };
     catchPhrase: string;
 
-    constructor(companyName: string, location: { lat: number; lng: number; }, catchPhrase: string) {
-        this.companyName = companyName;
+    constructor(name: string, location: { lat: number; lng: number; }, catchPhrase: string) {
+        this.name = name;
         this.location = location;
         this.catchPhrase = catchPhrase;
     }
